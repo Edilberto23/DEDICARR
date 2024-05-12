@@ -243,7 +243,7 @@ body::before {
 
 /* Estilos para el pie de página */
 footer {
-  background-color: #b433a9;
+  background-color: #d434c7;
   color: white;
   text-align: center;
   padding: 10px;
@@ -257,41 +257,39 @@ footer {
 /* Estilos para el corazón */
 
 
-@media only screen and (max-width: 768px) {
-  /* Ajustes para dispositivos móviles */
+@media only screen and (min-width: 769px) {
+  /* Estilos para pantallas que no sean móviles */
+
   #card {
-    width: 90%; /* Reducir el ancho del contenedor */
-    left: 5%; /* Centrar horizontalmente */
-    top: 5%; /* Ajustar la posición vertical */
+    width: auto; /* Revertir el ancho del contenedor a su valor por defecto */
+    left: auto; /* Revertir la posición horizontal a su valor por defecto */
+    top: auto; /* Revertir la posición vertical a su valor por defecto */
   }
 
   #card h1 {
-    font-size: 2em; /* Reducir el tamaño del título */
+    font-size: 3em; /* Ajustar el tamaño del título según necesites */
   }
 
   #card p {
-    font-size: 1em; /* Reducir el tamaño del texto */
-    padding: 10px; /* Ajustar el espacio entre párrafos */
+    font-size: 1.2em; /* Ajustar el tamaño del texto según necesites */
+    padding: 20px; /* Ajustar el espacio entre párrafos según necesites */
   }
 
   .valentines-day {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: block; /* Revertir la visualización de la sección de día de San Valentín a su valor por defecto */
   }
 
   .envelope:before,
   .envelope:after {
-    display: none; /* Ocultar los elementos adicionales del sobre */
+    display: block; /* Revertir la visualización de los elementos adicionales del sobre a su valor por defecto */
   }
 
   .heart,
   .text {
-    display: none; /* Ocultar el corazón y el texto */
+    display: block; /* Revertir la visualización del corazón y el texto a su valor por defecto */
   }
 
   .front {
-    display: none; /* Ocultar el frente del sobre */
+    display: block; /* Revertir la visualización del frente del sobre a su valor por defecto */
   }
 }
